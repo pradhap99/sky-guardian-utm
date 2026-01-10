@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Guardian UTM - Enterprise Drone Traffic Management</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #0b3d91 0%, #1563d5 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        header h1 { font-size: 3em; margin-bottom: 10px; }
+        header p { font-size: 1.3em; opacity: 0.9; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        .section { margin: 60px 0; }
+        .section h2 { color: #0b3d91; margin-bottom: 20px; font-size: 2em; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin: 30px 0; }
+        .feature { background: #f5f5f5; padding: 25px; border-radius: 8px; border-left: 4px solid #0b3d91; }
+        .feature h3 { color: #0b3d91; margin-bottom: 10px; }
+        .tech-stack { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin: 20px 0; }
+        .tech-item { background: #e8f4f8; padding: 15px; border-radius: 6px; }
+        .buttons { display: flex; gap: 15px; margin: 30px 0; flex-wrap: wrap; }
+        .btn { display: inline-block; padding: 12px 30px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: all 0.3s; }
+        .btn-primary { background: #0b3d91; color: white; }
+        .btn-primary:hover { background: #1563d5; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(11, 61, 145, 0.3); }
+        .btn-secondary { background: white; color: #0b3d91; border: 2px solid #0b3d91; }
+        .btn-secondary:hover { background: #f5f5f5; }
+        footer { background: #f5f5f5; padding: 30px 20px; text-align: center; margin-top: 80px; }
+        .highlight { background: #fff3cd; padding: 20px; border-left: 4px solid #ffc107; border-radius: 4px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🛰️ Sky Guardian UTM</h1>
+        <p>Enterprise-Grade Unmanned Traffic Management for BVLOS Drone Operations</p>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>What is Sky Guardian?</h2>
+            <p>Sky Guardian is a comprehensive SaaS platform designed for managing multi-operator Beyond Visual Line of Sight (BVLOS) drone operations. It provides real-time airspace deconfliction, automated jurisdictional compliance, and streamlined regulator approval workflows.</p>
+        </div>
+
+        <div class="section">
+            <h2>Core Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>🎯 Real-Time Risk Scoring</h3>
+                    <p>Evaluate flight risk across Air, Ground, and Operational dimensions with live calculations.</p>
+                </div>
+                <div class="feature">
+                    <h3>📍 4D Conflict Detection</h3>
+                    <p>Detect and prevent spatial/temporal collisions with sub-100ms latency.</p>
+                </div>
+                <div class="feature">
+                    <h3>✅ Automated Compliance</h3>
+                    <p>Enforce jurisdiction-specific regulations automatically.</p>
+                </div>
+                <div class="feature">
+                    <h3>👨‍💼 Regulator Portal</h3>
+                    <p>Enable civil aviation authorities to review and approve flights efficiently.</p>
+                </div>
+                <div class="feature">
+                    <h3>🗺️ Interactive Mapping</h3>
+                    <p>Visualize flight corridors and airspace reservations on an interactive map.</p>
+                </div>
+                <div class="feature">
+                    <h3>📊 Analytics & Audit</h3>
+                    <p>Complete tracking of all decisions and actions for compliance.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Technology Stack</h2>
+            <div class="tech-stack">
+                <div class="tech-item"><strong>Frontend:</strong> React 18, TypeScript, Leaflet</div>
+                <div class="tech-item"><strong>Backend:</strong> Node.js, Express, Microservices</div>
+                <div class="tech-item"><strong>Database:</strong> PostgreSQL, PostGIS</div>
+                <div class="tech-item"><strong>Deployment:</strong> Kubernetes, Docker, Terraform</div>
+            </div>
+        </div>
+
+        <div class="section highlight">
+            <h3>🚀 Get Started</h3>
+            <p><strong>Clone the repository:</strong></p>
+            <code>git clone https://github.com/pradhap99/sky-guardian-utm.git</code>
+            <p style="margin-top: 15px;"><strong>Setup & Run:</strong></p>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li>Backend: <code>cd backend && npm install && npm run dev</code></li>
+                <li>Frontend: <code>cd frontend && npm install && npm start</code></li>
+                <li>Open: <code>http://localhost:3000</code></li>
+            </ul>
+        </div>
+
+        <div class="buttons">
+            <a href="https://github.com/pradhap99/sky-guardian-utm" class="btn btn-primary">📖 View Full Documentation</a>
+            <a href="https://github.com/pradhap99/sky-guardian-utm/blob/main/README.md" class="btn btn-secondary">Read README</a>
+        </div>
+
+        <div class="section">
+            <h2>Key Stats</h2>
+            <ul style="font-size: 1.1em; line-height: 2;">
+                <li>⚡ <strong>Sub-100ms</strong> conflict detection latency</li>
+                <li>👥 <strong>100+ concurrent flights</strong> support in MVP</li>
+                <li>🔒 <strong>Multi-tenant</strong> with complete data isolation</li>
+                <li>📜 <strong>SOC2-ready</strong> compliance controls</li>
+                <li>🌍 <strong>Multi-jurisdiction</strong> regulatory support</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sky Guardian UTM. Built for advancing safe autonomous flight. | <a href="https://github.com/pradhap99/sky-guardian-utm">GitHub Repository</a></p>
+    </footer>
+</body>
+</html>
